@@ -1,0 +1,7 @@
+interface:
+  display_name: "后端模式"
+  short_description: "API 设计、数据库和服务器端模式"
+  brand_color: "#F59E0B"
+  default_prompt: "应用后端模式：API 设计、仓储、缓存"
+policy:
+  allow_implicit_invocation: true

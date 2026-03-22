@@ -1,0 +1,7 @@
+interface:
+  display_name: "API 设计"
+  short_description: "REST API 设计模式和最佳实践"
+  brand_color: "#F97316"
+  default_prompt: "设计 REST API：资源、状态码、分页"
+policy:
+  allow_implicit_invocation: true

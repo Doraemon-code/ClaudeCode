@@ -1,0 +1,7 @@
+interface:
+  display_name: "安全审核"
+  short_description: "全面的安全检查清单和漏洞检测"
+  brand_color: "#EF4444"
+  default_prompt: "运行安全检查清单：密钥、输入验证、注入防护"
+policy:
+  allow_implicit_invocation: true
