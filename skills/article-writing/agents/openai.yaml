@@ -1,7 +1,0 @@
-interface:
-  display_name: "文章写作"
-  short_description: "以指定风格撰写长篇内容，避免模板化表达"
-  brand_color: "#B45309"
-  default_prompt: "根据这些笔记和示例起草一篇犀利的长篇文章"
-policy:
-  allow_implicit_invocation: true

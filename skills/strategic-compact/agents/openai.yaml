@@ -1,7 +1,0 @@
-interface:
-  display_name: "战略压缩"
-  short_description: "通过战略压缩进行上下文管理"
-  brand_color: "#14B8A6"
-  default_prompt: "建议在任务边界进行压缩以管理上下文"
-policy:
-  allow_implicit_invocation: true

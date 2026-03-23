@@ -17,39 +17,39 @@
 - 最大推理要求
 - 研究和分析任务
 
-## Context Window Management
+## Context Window 管理
 
-Avoid last 20% of context window for:
-- Large-scale refactoring
-- Feature implementation spanning multiple files
-- Debugging complex interactions
+避免在 context window 最后 20% 时执行：
+- 大规模重构
+- 跨多文件的功能实现
+- 复杂交互调试
 
-Lower context sensitivity tasks:
-- Single-file edits
-- Independent utility creation
-- Documentation updates
-- Simple bug fixes
+低上下文敏感度任务：
+- 单文件编辑
+- 独立工具创建
+- 文档更新
+- 简单 bug 修复
 
 ## Extended Thinking + Plan Mode
 
-Extended thinking is enabled by default, reserving up to 31,999 tokens for internal reasoning.
+Extended thinking 默认启用，最多预留 31,999 tokens 用于内部推理。
 
-Control extended thinking via:
-- **Toggle**: Option+T (macOS) / Alt+T (Windows/Linux)
-- **Config**: Set `alwaysThinkingEnabled` in `~/.claude/settings.json`
-- **Budget cap**: `export MAX_THINKING_TOKENS=10000`
-- **Verbose mode**: Ctrl+O to see thinking output
+通过以下方式控制 extended thinking：
+- **切换**: Option+T (macOS) / Alt+T (Windows/Linux)
+- **配置**: 在 `~/.claude/settings.json` 中设置 `alwaysThinkingEnabled`
+- **预算上限**: `export MAX_THINKING_TOKENS=10000`
+- **详细模式**: Ctrl+O 查看 thinking 输出
 
-For complex tasks requiring deep reasoning:
-1. Ensure extended thinking is enabled (on by default)
-2. Enable **Plan Mode** for structured approach
-3. Use multiple critique rounds for thorough analysis
-4. Use split role sub-agents for diverse perspectives
+需要深度推理的复杂任务：
+1. 确保 extended thinking 已启用（默认开启）
+2. 启用 **Plan Mode** 进行结构化处理
+3. 使用多轮评审进行彻底分析
+4. 使用分离角色的子代理获取多元视角
 
-## Build Troubleshooting
+## 构建故障排查
 
-If build fails:
-1. Use **build-error-resolver** agent
-2. Analyze error messages
-3. Fix incrementally
-4. Verify after each fix
+如果构建失败：
+1. 使用 **build-error-resolver** agent
+2. 分析错误信息
+3. 逐步修复
+4. 每次修复后验证
